@@ -37,11 +37,7 @@ jobs:
         run: php artisan key:generate
         working-directory: project
 
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        run: |
+          ftp-deploy -u affiliatePro@cleantech.geniusocean.net -p affiliatePro -r ftp://cleantech@cleantech.geniusocean.net:7822/home/cleantech/public_html/affiliate-new
 
-        with:
-          server:  ftp.cleantech.geniusocean.net
-          username: affiliatePro@cleantech.geniusocean.net
-          password: affiliatePro
-          passive: true
+

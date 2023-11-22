@@ -44,5 +44,5 @@ jobs:
           server: ftp.cleantech.geniusocean.net
           username: affiliatePro@cleantech.geniusocean.net
           password: affiliatePro
-          server-dir: /public_html/affiliate-new
+          server-dir: /public_html/affiliate-new/
           passive: true

@@ -36,7 +36,8 @@ jobs:
       - name: Generate Application Key
         run: php artisan key:generate
         working-directory: project
-
+        
+      - name: Deploy to FTP
         run: |
           ftp-deploy -u affiliatePro@cleantech.geniusocean.net -p affiliatePro -r ftp://cleantech@cleantech.geniusocean.net:7822/home/cleantech/public_html/affiliate-new
 

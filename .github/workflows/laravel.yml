@@ -38,7 +38,7 @@ jobs:
         working-directory: project
 
       - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
 
         with:
           server: ftp.cleantech.geniusocean.net

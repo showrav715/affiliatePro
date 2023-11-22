@@ -1184,8 +1184,7 @@ Route::group(['middleware' => 'maintenance'], function () {
     // PAGE SECTION ENDS
 
     Route::get('/shedule/check', 'Front\FrontendController@sheduleCheck');
-    // ************************************ FRONT SECTION ENDS**********************************************
-
+ 
 });
 
 

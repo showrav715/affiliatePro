@@ -37,9 +37,7 @@ jobs:
         run: php artisan key:generate
         working-directory: project
 
-
-
-   - name: Download ftp-deploy script
+      - name: Download ftp-deploy script
         run: |
           curl -sSL https://raw.githubusercontent.com/lukasmartinelli/ftp-deploy/master/ftp-deploy -o ftp-deploy
           chmod +x ftp-deploy
@@ -47,5 +45,3 @@ jobs:
       - name: Deploy to FTP
         run: |
           ./ftp-deploy -u affiliatePro@cleantech.geniusocean.net -p affiliatePro -r ftp://cleantech@cleantech.geniusocean.net:7822/home/cleantech/public_html/affiliate-new
-
-
